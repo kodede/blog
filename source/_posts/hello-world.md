@@ -1,38 +1,9 @@
 ---
 title: Hello World
+date: 2018-04-26 23:40:39
+tags:
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+독일로 건너와 IT 분야에서 일을 시작하는 사람들의 이야기가 있는 블로그에 오신 것을 환영합니다. 친목과 정보교환, 그리고 현지에서 일자리를 알아 보시는 분들에게 조금이나마 도움이 되었으면 합니다. 도움되는 이야기도 많이 해 주시고 경험담도 많이 공유해 주세요.
 
-### Create a new post
-
-``` bash
-$ hexo new "My New Post"
-```
-
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/deployment.html)
+사이트가 미흡한 부분이 많으나 조금씩 개선해 나갈 예정입니다 :)
