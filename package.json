@@ -6,6 +6,7 @@
     "version": "3.7.1"
   },
   "scripts": {
+    "post": "hexo new post",
     "start": "hexo server",
     "gen": "hexo generate",
     "deploy": "hexo deploy"
