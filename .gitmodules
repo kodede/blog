@@ -1,0 +1,9 @@
+[submodule "themes/kodede"]
+	path = themes/kodede
+	url = git@github.com:kodede/blog-theme.git
+[submodule "theme/overdose"]
+	path = theme/overdose
+	url = git@github.com:kodede/hexo-theme-overdose.git
+[submodule "themes/overdose"]
+	path = themes/overdose
+	url = git@github.com:kodede/hexo-theme-overdose.git
