@@ -22,7 +22,7 @@ $ g submodule add git@github.com:kodede/hexo-theme-overdose.git themes/overdose
 
 ## 설치
 
-기본적으로 dev 환경에서 node, yarn 이 설치되어 있어야 합니다. 다음과 같이 git repository 를 Download clone 합니다. 이후에 해당 작업디렉토리로 이동하여 site 를 동적으로 생성하기 위한 package 를 설치합니다.
+기본적으로 dev 환경에서 node, yarn 이 설치되어 있어야 합니다. 다음과 같이 git 작업디렉토리를 내려받고 package 를 설치합니다.
 
 ```
 $ git clone https://github.com/kodede/blog.git
@@ -36,7 +36,7 @@ $ yarn install
 $ g submodule add git@github.com:kodede/hexo-theme-overdose.git themes/overdose
 ```
 
-설치가 완료되면 다음과 같은 구조의 directory 가 생성됩니다. `source` 디렉토리에 새로운 글이 채워지고 `public` 폴더 아래로 hexo 에 의해 생성된 static html page 들이 kodede.github.io 로 배포됩니다.
+설치가 완료되면 다음과 같은 구조의 directory 가 생성됩니다. `source` 디렉토리에 새로운 글이 채워지고 `public`에 static html 이 생성됩니다.
 
 ```
 blog
@@ -59,7 +59,7 @@ blog
 
 ## 실행
 
-설치가 완료되면, 현재 게시하려는 웹사이트를 다음과 같이 동적으로 확인할 수 있습니다.
+현재 게시하려는 웹사이트를 확인할 수 있습니다.
 
 ```
 $ yarn start
@@ -72,7 +72,7 @@ INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
 
 ## 새글 작성
 
-다음의 `yarn post` 명령으로 글 제목을 다음과 같이 입력하면 새로운 글을 작성하기 위한 templete 이 만들어 집니다. 아래의 예제에서는 `~/projects/blog/source/_posts/글제목을-입력합니다.md` 위치에 `mockdown` 파일이 만들어 졌습니다. 이 파일을 편집하여 글을 작성합니다. 작성을 하면서 `yarn start` 명령으로 실행중인 `http://localhost:4000` 위치에서 편집중인 페이지를 확인할 수 있습니다.
+`yarn post` 명령으로 글 제목을 입력하면 새글을 위한 mockdown templete 이 만들어 집니다. 이 파일을 편집하여 글을 작성합니다. 작성을 하면서 `yarn start` 명령으로 편집중인 페이지를 확인할 수 있습니다.
 
 ```
 $ yarn post "글제목을 입력합니다"
@@ -85,7 +85,7 @@ INFO  Created: ~/projects/blog/source/_posts/글제목을-입력합니다.md
 
 ## 사이트 생성
 
-글 작성이 완료되면 배포를 위해 `yarn gen` 명령으로 HTML 파일을 생성합니다. `public` 디렉토리에 정적인 파일이 생성되나, 해당 git repository 에는 `source` 폴더 아래로 생성된 글 원본 파일만 commit 합니다.
+글 작성이 완료되면 배포를 위해 `yarn gen` 명령으로 HTML 파일을 생성합니다. `public` 디렉토리에 정적인 파일이 생성되나, 해당 git repository 에는 `source` 폴더 아래로 생성된 글의 원본만 commit 합니다.
 
 ```
 $ yarn gen
@@ -106,7 +106,7 @@ INFO  146 files generated in 180 ms
 
 ## 새글 게시
 
-위의 과정으로 생성된 `public` 디렉토리의 내용을 kodede.github.io 의 master branch 로 commit 해 주는 명령을 실행합니다.
+`yarn deploy`을 실행하여 `public` 디렉토리의 내용을 kodede.github.io 의 master branch 로 commit 해줍니다. commit 하면 github page 에 작성한 내용이 반영됩니다. (약간의 지연이 있습니다.)
 
 ```
 $ yarn deploy
